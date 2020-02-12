@@ -1,0 +1,55 @@
+INTRODUCTION
+=============
+
+Big Data is a phrase used to mean a massive volume of both structured and unstructured data that is so large it is difficult to process using traditional
+database and software techniques. In most enterprise scenarios the volume of data is too big or it moves too fast or it exceeds current processing capacity.
+The project to be done is a batch data project.Cloudera quickstart VM is used in this batch data project.
+
+
+OBJECTIVE
+=========
+
+To store Big data in hdfs and process that Big data using pyspark to obtain the necessary information for the user.
+
+
+PROCEDURE
+==========
+
+1)Download the necessary data from Kaggle.com.The data I have taken is nba_stats which is uploaded in the Raw data folder of this file.
+
+2)Use the command "mysql -u root -p" and type the password "cloudera" to enter MySQL.
+
+3)Create a database in MySQL using the command "CREATE DATABASE project;" and give "use project" to access that database.
+
+4)Create a table with the right column names and data types in 	MySQL so that the obtained data can be loaded into it.
+
+5)The code for creating a table is given in the folder Program code
+
+6)Load the obtained data in MySQL.The code for loading the data is given in the folder Program code.
+
+7)The loaded table in MySQL is imported in hive using sqoop.The code for importing the data using sqoop is given in the folder Program code.
+
+8)Use command "hive" to enter hive and check whether the data is properly imported use the code "Select * from nbahive;" to check the imported data.
+
+9)Create a directory in linux using "mkdir project".Use "vi project.py" to open a Python script file to process the nba data that was imported in hive.
+
+10)The code for processing the data to obtain the required information is given in the folder Python code.
+
+11)Use "spark-submit project.py" to run the python file containing the code.
+
+12)The screenshots of the outputs is in the folder Screenshots/Output.
+
+13)Open HUE which is located in the browser and click impala/hive to view the result tables.Right click the table and select open in editor.
+
+14)Different visualization options are given in HUE such as bar diagram,Pie chart,Line chart,etc click the required chart to visualize your result table.
+
+15)The screenshots of the charts/diagrams in HUE is given in folder Screenshots/Chart
+
+16)The Architecture diagram of this project is located in the folder Architecture Diagram
+
+
+Conclusion
+============
+
+If all the above steps are correctly followed the big data is stored and processed and the required information/date that is necessary for the
+user is obtained.

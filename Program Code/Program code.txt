@@ -1,0 +1,21 @@
+entering mysql code: mysql -u root -p
+
+
+creating table:
+create table nba (gmDate DATE,gmTime TIME,seasonType VARCHAR(10),lastName VARCHAR(100),firstName VARCHAR(100),teamAbbr VARCHAR(5),
+teamConf VARCHAR(10),teamDiv VARCHAR(20),teamLoc VARCHAR(10),Result VARCHAR(10),dayOff INT,offLNm1 VARCHAR(50),offFNm1 VARCHAR(50),
+offLNm2 VARCHAR(50),offFNm2 VARCHAR(50),offLNm3 VARCHAR(50),offFNm3 VARCHAR(50),playerName VARCHAR(255),playerStat VARCHAR(10),
+Minutes INT,Position VARCHAR(5),Height INT,Weight INT,birthDate DATE,PTS INT,AST INT,TOV INT,STL INT,BLK INT,PF INT,FGA INT,FGM INT,
+FGPCT DECIMAL(10,4),2PTA INT,2PTM INT,2PTPCT DECIMAL(10,4),3PTA INT,3PTM INT,3PTPCT DECIMAL(10,4),FTA INT,FTM INT,FTPCT DECIMAL(10,4),ORB INT,DRB INT,TRB INT,
+oppAbbr VARCHAR(10),oppConf VARCHAR(10),oppDiv VARCHAR(10),oppLoc VARCHAR(10),oppResult VARCHAR(10),oppDayOff INT);
+
+
+load data in mysql:
+load data infile '/home/cloudera/workspace/folder/nba_stats.csv'  into table nba fields terminated by ',' enclosed by '"' lines terminated by '\n' ignore 1 lines;
+
+
+Sqoop from sql to hive:
+sqoop import --connect jdbc:mysql://quickstart.cloudera:3306/project --username root --password cloudera --table nba --target-dir /home/cloudera/workspace/myhive --hive-import --create-hive-table --hive-table default.nbahive --m 1
+
+compiling command: spark-submit project.py
+
