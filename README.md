@@ -30,8 +30,9 @@ Basic knowledge of MySQL,HIve,PySpark,sqoop is required .
 To learn more visit the links provided in the reference section
 In this project i have taken the NBA box score data from 2012 to 2018 and manipulated the data using Apache spark to meet my requirements
 
-###Example
- Code to find the tallest nba player
+### Example
+
+ Code to find the tallest nba player:
 
 ```python
 #1 Max Height
@@ -42,7 +43,7 @@ result1.show()
 
 Output
 
-
+![Alt text](Screenshots/Chart/tallest.jpg?raw=true "Title")
 
 For other examples refer 
 
