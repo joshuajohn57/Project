@@ -12,6 +12,7 @@ To store Big data in hdfs and process that Big data using pyspark to obtain the 
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Reference](#reference)
+- [Example](#example)
 - [Support](#support)
 - [License](#license)
 
@@ -25,12 +26,12 @@ To store Big data in hdfs and process that Big data using pyspark to obtain the 
 
 ## Usage
 
-Detailed information to use this project can be viewed in the Description txt in the folder Description.\
-Basic knowledge of MySQL,HIve,PySpark,sqoop is required.\
-To learn more visit the links provided in the [reference](#reference) section.\
-In this project i have taken the NBA box score data from 2012 to 2018 and manipulated the data using Apache spark to meet my requirements\
+* Detailed information to use this project can be viewed in the [Description.txt](https://github.com/joshuajohn57/project/blob/master/Description/Description.txt) in this repository.\
+* Basic knowledge of MySQL, HIve, PySpark, Sqoop is required.\
+* To learn more visit the links provided in the [reference](#reference) section.\
+* In this project i have taken the NBA box score data from 2012 to 2018 and manipulated the data using Apache spark to meet my requirements
 
-### Example
+## Example
 
  Code to find the NBA players with most turnovers:
 
@@ -44,7 +45,7 @@ result6.show(n=10)
 result6.write.mode("overwrite").saveAsTable("default.turnovers")
 ```
 
-Output
+#### Output
 
 ![Alt text](https://github.com/joshuajohn57/project/blob/master/Screenshots/Chart/9.turnovers.JPG)
 
