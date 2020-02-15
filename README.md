@@ -25,10 +25,10 @@ To store Big data in hdfs and process that Big data using pyspark to obtain the 
 
 ## Usage
 
-Detailed information to use this project can be viewed in the Description txt in the folder Description
-Basic knowledge of MySQL,HIve,PySpark,sqoop is required .
-To learn more visit the links provided in the reference section
-In this project i have taken the NBA box score data from 2012 to 2018 and manipulated the data using Apache spark to meet my requirements
+Detailed information to use this project can be viewed in the Description txt in the folder Description.\
+Basic knowledge of MySQL,HIve,PySpark,sqoop is required.\
+To learn more visit the links provided in the [reference](#reference) section.\
+In this project i have taken the NBA box score data from 2012 to 2018 and manipulated the data using Apache spark to meet my requirements\
 
 ### Example
 
@@ -47,9 +47,12 @@ result6.write.mode("overwrite").saveAsTable("default.turnovers")
 Output
 
 ![Alt text](https://github.com/joshuajohn57/project/blob/master/Screenshots/Chart/9.turnovers.JPG)
+
+
 ![Alt text](https://github.com/joshuajohn57/project/blob/master/Screenshots/Output/9..turnoversoutput.JPG)
 
-For other examples refer this [python code](https://github.com/joshuajohn57/project/blob/master/Python%20Code/Python%20Code.py)
+
+For other examples refer the [python code](https://github.com/joshuajohn57/project/blob/master/Python%20Code/Python%20Code.py) provided in this repository
 
 The above python code can be edited to suit your requirements
 
@@ -74,7 +77,7 @@ Reach out to me at johuajohn7057@gmail.com
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-[MIT LICENSE](https://opensource.org/licenses/mit-license.php)
+[**MIT LICENSE**](https://opensource.org/licenses/mit-license.php)
 
 
 
