@@ -32,33 +32,37 @@ In this project i have taken the NBA box score data from 2012 to 2018 and manipu
 
 ### Example
 
- Code to find the tallest nba player:
+ Code to find the NBA players with most turnovers:
 
 ```python
-#1 Max Height
-maxheight = data.groupBy().max('Height').withColumnRenamed("max(Height)","max_height")
-result1 = data.join(maxheight,data.height == maxheight.max_height,"inner").select(data.playername,data.height).distinct()
-result1.show()
+#9 Most Turnovers
+turnover= data.select('playerName','TOV')
+total_turnover = turnover.groupby('playerName').agg(f.sum('TOV').alias('TOV'))
+sorted_turnover = total_turnover.sort(f.desc('TOV'))
+result6=sorted_turnover.select('playerName','TOV')
+result6.show(n=10)
+result6.write.mode("overwrite").saveAsTable("default.turnovers")
 ```
 
 Output
 
-![Alt text](https://github.com/joshuajohn57/project/blob/master/Screenshots/Chart/1.tallest.JPG)
+![Alt text](https://github.com/joshuajohn57/project/blob/master/Screenshots/Chart/9.turnovers.JPG)
+![Alt text](https://github.com/joshuajohn57/project/blob/master/Screenshots/Output/9..turnoversoutput.JPG)
 
-For other examples refer 
+For other examples refer this [python code](https://github.com/joshuajohn57/project/blob/master/Python%20Code/Python%20Code.py)
 
 The above python code can be edited to suit your requirements
 
 
 ## Reference
 
-MySQL -https://www.w3schools.com/sql/
+MySQL - https://www.w3schools.com/sql/
 
-Spark programming guide https://spark.apache.org/docs/1.6.0/programming-guide.html
+Spark programming guide - https://spark.apache.org/docs/1.6.0/programming-guide.html
 
-Spark SQL, DataFrames and Datasets Guide https://spark.apache.org/docs/1.6.0/sql-programming-guide.html
+Spark SQL, DataFrames and Datasets Guide - https://spark.apache.org/docs/1.6.0/sql-programming-guide.html
 
-PySpark API documentation https://spark.apache.org/docs/1.6.0/api/python/pyspark.sql.html
+PySpark API documentation - https://spark.apache.org/docs/1.6.0/api/python/pyspark.sql.html
 
 
 ## Support
