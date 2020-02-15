@@ -3,7 +3,9 @@
 To store Big data in hdfs and process that Big data using pyspark to obtain the necessary information for the user.
 
 
-	/appveyor/build/:user/:repo
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-1.6)
 
 
 ## Table of Contents
@@ -12,9 +14,6 @@ To store Big data in hdfs and process that Big data using pyspark to obtain the 
 - [Reference](#reference)
 - [Support](#support)
 - [License](#license)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 
 
@@ -30,13 +29,16 @@ Detailed information to use this project can be viewed in the Description txt in
 Basic knowledge of MySQL,HIve,PySpark,sqoop is required .
 To learn more visit the links provided in the reference section
 In this project i have taken the NBA box score data from 2012 to 2018 and manipulated the data using Apache spark to meet my requirements
-Example
+
+###Example
  Code to find the tallest nba player
 
+```python
 #1 Max Height
 maxheight = data.groupBy().max('Height').withColumnRenamed("max(Height)","max_height")
 result1 = data.join(maxheight,data.height == maxheight.max_height,"inner").select(data.playername,data.height).distinct()
 result1.show()
+```
 
 Output
 
@@ -64,7 +66,10 @@ Reach out to me at johuajohn7057@gmail.com
 
 ## License
 
-MIT LICENSE https://opensource.org/licenses/mit-license.php
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+[MIT LICENSE](https://opensource.org/licenses/mit-license.php)
 
 
 
