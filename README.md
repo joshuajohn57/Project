@@ -3,9 +3,9 @@
 To store Big data in hdfs and process that Big data using pyspark to obtain the necessary information for the user.
 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-1.6)
+[![License](https://img.shields.io/badge/License-Apache%201.6-blue.svg)](https://opensource.org/licenses/Apache-1.6)
 
 
 ## Table of Contents
