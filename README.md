@@ -4,7 +4,6 @@ To store Big data in hdfs and process that Big data using pyspark to obtain the 
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 [![License](https://img.shields.io/badge/License-Apache%201.6-blue.svg)](https://opensource.org/licenses/Apache-1.6)
 
 
@@ -26,9 +25,9 @@ To store Big data in hdfs and process that Big data using pyspark to obtain the 
 
 ## Usage
 
-* Detailed information to use this project can be viewed in the [Description.txt](https://github.com/joshuajohn57/project/blob/master/Description/Description.txt) in this repository.\
-* Basic knowledge of MySQL, HIve, PySpark, Sqoop is required.\
-* To learn more visit the links provided in the [reference](#reference) section.\
+* Detailed information to use this project can be viewed in the [Description.txt](https://github.com/joshuajohn57/project/blob/master/Description/Description.txt) in this repository.
+* Basic knowledge of MySQL, HIve, PySpark, Sqoop is required.
+* To learn more visit the links provided in the [reference](#reference) section.
 * In this project i have taken the NBA box score data from 2012 to 2018 and manipulated the data using Apache spark to meet my requirements
 
 ## Example
