@@ -43,7 +43,7 @@ result1.show()
 
 Output
 
-![Alt text](https://github.com/joshuajohn57/project.git/Screenshots/Chart/tallest.jpg?raw=true "Title")
+![Alt text](https://raw.githubusercontent.com/joshuajohn57/project/master/Screenshots/Chart/tallest.jpg?raw=true "Title")
 
 For other examples refer 
 
